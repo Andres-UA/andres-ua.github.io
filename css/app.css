@@ -1,0 +1,226 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+/* Generals */
+* {
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    background-color: #F9F9F9;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #000000;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:hover {
+    color: #00695C;
+}
+
+a:active {
+    color: #00695C;
+}
+
+/* Fonts */
+.title {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.text-muted {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+}
+
+/* Profile */
+
+.profile-pic {
+    float: left;
+    -webkit-box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.3);
+    margin-right: 30px;
+}
+
+.profile-info {
+    float: none;
+}
+
+.profile-contact {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.profile-contact .item {
+    float: left;
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 50px;
+    color: white;
+}
+
+.profile-contact .item i {
+    margin: 5px;
+    color: #00695C;
+}
+
+/* Sections */
+
+.header {
+    height: 175px;
+    background-color: #00897B;
+}
+
+.container {
+    width: 842px;
+    height: auto;
+    /*border: 1px solid black;*/
+    margin: 0% auto;
+    padding: 18px 30px;
+}
+
+.exp {
+    margin-bottom: 60px;
+}
+
+.left {
+    float: left;
+    font-size: 32px;
+    width: 40px;
+    color: #00695C;
+}
+
+.right {
+    width: 600px;
+    float: right;
+}
+
+.col-l {
+    width: 380px;
+    float: left;
+}
+
+.col-r {
+    width: 380px;
+    float: right;
+}
+
+/* Card */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #00695C;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Flex Section */
+.flex-container {
+    clear: both;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+/* Grid Section */
+.grid-container {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    grid-template-columns: 35% 30% 35%;
+}
+
+.box {
+    padding: 20px;
+    -webkit-box-shadow: 0px 1px 10px 2px rgba(5,5,5,0.2);
+    -moz-box-shadow: 0px 1px 10px 2px rgba(5,5,5,0.2);
+    box-shadow: 0px 1px 10px 2px rgba(5,5,5,0.2);
+}
+
+.box:nth-child(8) {
+    grid-column: 2 / 4;
+}
+
+/* Modal */
+#popup {
+    position: absolute;
+    width: 100%;
+    z-index: 1001;
+    width:500px;
+    height:250px;
+}
+ 
+.content-popup {
+    margin:0px auto;
+    margin-top:120px;
+    position:relative;
+    padding:10px;
+    width:500px;
+    height:250px;
+    border-radius:4px;
+    background-color:#FFFFFF;
+    box-shadow: 0 2px 5px #666666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+ 
+.content-popup .modal-title {
+    border-bottom: 1px solid #00695C;
+    padding-bottom: 4px;
+    color: #00695C;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+ 
+.popup-overlay {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display:none;
+    background-color: #777777;
+    cursor: pointer;
+    opacity: 0.7;
+}
+ 
+.close {
+    position: absolute;
+    right: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+}
